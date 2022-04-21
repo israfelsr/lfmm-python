@@ -1,3 +1,13 @@
+# common imports
+import numpy as np
+
+# local imports
+from ridgelfmm import RidgeLFMM
+from lfmmdat import LfmmDat
+from utils import center_columns, compute_gif, compute_pvalue_from_zscore2
+from hypothesis_testing import hypothesis_testing_lm
+
+
 def lfmm_ridge(Y, X, K, lambda_value=1e-5, algorithm="analytical",
                it_max=100, relative_err_min=1e-6):
     m = RidgeLFMM(K, lambda_value, algorithm)

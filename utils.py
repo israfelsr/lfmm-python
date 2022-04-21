@@ -1,3 +1,7 @@
+# common imports
+import numpy as np
+import scipy
+
 def center_columns(x):
     return (x-np.expand_dims(np.mean(x, axis=0),0))
 

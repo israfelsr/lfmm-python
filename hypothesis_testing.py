@@ -1,3 +1,9 @@
+# common imports
+import numpy as np
+
+# local imports
+from utils import compute_B_ridge, compute_pvalue_from_tscore
+
 def hypothesis_testing_lm(dat, X, lambda_value):
     hp = {}
     d = X.shape[1]
